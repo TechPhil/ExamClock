@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ExamClock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ExamClock.Designer.cs">
+      <DependentUpon>ExamClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DurationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DurationDialog.Designer.cs">
+      <DependentUpon>DurationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamNameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamNameDialog.Designer.cs">
+      <DependentUpon>ExamNameDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExamClock.resx">
+      <DependentUpon>ExamClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DurationDialog.resx">
+      <DependentUpon>DurationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamNameDialog.resx">
+      <DependentUpon>ExamNameDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
